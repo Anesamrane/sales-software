@@ -1,0 +1,28 @@
+{
+  "devDependencies": {
+    "@types/recharts": "^1.8.29",
+    "concurrently": "^9.2.0",
+    "electron": "^37.2.0",
+    "wait-on": "^8.0.3"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\" \"npm run dev:electron\"",
+    "dev:backend": "node backend/index.js",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:electron": "wait-on http://localhost:3000 && electron electron/main.js"
+  },
+  "dependencies": {
+    "@ericblade/quagga2": "^1.8.4",
+    "@headlessui/react": "^2.2.4",
+    "@heroicons/react": "^2.2.0",
+    "better-sqlite3": "^12.2.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-session": "^1.18.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-qr-reader": "^3.0.0-beta-1",
+    "recharts": "^3.1.0",
+    "sqlite3": "^5.1.7"
+  }
+}

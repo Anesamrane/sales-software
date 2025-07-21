@@ -1,0 +1,21 @@
+# Ignore all node_modules everywhere
+**/node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Electron build output
+dist/
+build/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
